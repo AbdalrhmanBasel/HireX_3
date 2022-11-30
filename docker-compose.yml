@@ -4,10 +4,10 @@ services: # Containers
   app:
     build: .
     volumes:
-      - .:/django
-    image: app:django
+      - .:/HireX_3
+    image: app:HireX_3
 
-    command: python /django/manage.py runserver 0.0.0.0:8003
+    command: python /HireX_3/manage.py runserver 0.0.0.0:8003
     ports:
     - 8003:8003
     depends_on:
